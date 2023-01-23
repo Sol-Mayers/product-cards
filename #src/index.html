@@ -1,41 +1,47 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
+    <head>
+        <meta charset="utf-8" />
+        <title>Product-Cards</title>
+        <link href="css/style.min.css" rel="stylesheet" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400&display=swap"
+            rel="stylesheet"
+        />
+    </head>
 
-<head>
-  <meta charset="utf-8">
-  <title>Product-Cards</title>
-  <link href="css/style.min.css" rel="stylesheet">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400&display=swap" rel="stylesheet">
-</head>
-
-<body>
-  <header>
-
-  </header>
-  <main>
-    <input type="text" id="search" placeholder="Поиск..." class="search-field">
-    <div class="sort-wrap">
-      <p class="sort-wrap__title">Сортировать по</p>
-      <select id="change-sort">
-        <option class="name-up" value="name-up">Названию (по возрастанию)</option>
-        <option class="name-down" value="name-down">Названию (по убыванию)</option>
-        <option class="price-up" value="price-up">Цене (по возрастанию)</option>
-        <option class="price-down" value="price-down">Цене (по убыванию)</option>
-      </select>
-    </div>
-    <div class="cards-contaner">
-
-    </div>
-    <div id="pagination-container">
-
-    </div>
-  </main>
-  <footer>
-
-  </footer>
-  <script src="js/script.min.js"></script>
-</body>
-
+    <body>
+        <header></header>
+        <main>
+            <input
+                type="text"
+                id="search"
+                placeholder="Поиск..."
+                class="search-field"
+            />
+            <div class="sort-wrap">
+                <p class="sort-wrap__title">Сортировать по:</p>
+                <select id="change-sort">
+                    <option class="name-up" value="name-up">
+                        Названию (по возрастанию)
+                    </option>
+                    <option class="name-down" value="name-down">
+                        Названию (по убыванию)
+                    </option>
+                    <option class="price-up" value="price-up">
+                        Цене (по возрастанию)
+                    </option>
+                    <option class="price-down" value="price-down">
+                        Цене (по убыванию)
+                    </option>
+                </select>
+            </div>
+            <div class="cards-contaner"></div>
+            <div id="pagination-container"></div>
+        </main>
+        <footer></footer>
+        <script src="js/script.min.js"></script>
+    </body>
 </html>
